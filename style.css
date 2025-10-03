@@ -209,3 +209,145 @@ h3{
     justify-content: center;
     color: white;
 }
+
+
+@media (max-width: 375px) {
+  body {
+      padding: 15px; 
+  }
+
+  .card {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px; 
+    margin: 20px auto; 
+    gap: 15px; 
+  }
+
+  .content1 {
+    display: flex; 
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden; 
+  }
+
+  .content1 .header {
+    display: flex;
+    align-items: center; 
+    padding: 25px 20px; 
+    gap: 20px;
+  }
+
+  .header img {
+    width: 60px; 
+    height: 60px;
+    margin: 0;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+
+  .content1 .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content1 .head span {
+    font-size: 0.9rem; 
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .content1 .head h1 {
+    font-size: 1.8rem; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.1; 
+  }
+
+  .content1 .footer {
+    display: flex;
+    justify-content: space-around; 
+    padding: 15px 0;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 0 0 15px 15px;
+  }
+
+  .content1 .footer h3 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+
+  .card > div:not(.content1) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px; 
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .card > div .top {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 60px; 
+    height: 60px;
+    background-size: 80%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  .card > div .bottom {
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    border-radius: 15px;
+    flex-grow: 1;
+  }
+
+  .card > div .bottom .header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .card > div .bottom .header2 h2 {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card > div .bottom h1 {
+    font-size: 2rem; 
+    margin: 0 0 5px 0;
+    padding: 0;
+  }
+
+  .card > div .bottom h3 {
+    font-size: 0.9rem; 
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+@media (min-width: 1440px) {
+    .card{
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 15% 0;
+    color: hsl(236, 100%, 87%);
+}
+
+    /* .content1 .header img {
+        width: 100px;
+        height: 100px;
+    } */
+}
